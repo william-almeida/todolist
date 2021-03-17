@@ -90,11 +90,33 @@ header h1 {
 }
 
 .container {
-  width: 80vw;
+  width: 60vw;
   margin: auto;
   padding: 2rem;
   border-radius: 0.8rem;
   background-color: var(--color-shape);
+}
+.container .add-task {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.container .add-task input {
+  margin-right: 1rem;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.container .add-task button {
+  font-size: 1.5rem;
+  font-weight: 900;
+  background-color: var(--color-green);
+  transition: 200ms;
+}
+
+.container .add-task button:hover {
+  opacity: 0.8;
 }
 
 li {
