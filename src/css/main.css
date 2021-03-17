@@ -47,7 +47,7 @@ body, button, input, textarea {
   font: 400 1rem 'Inter', sans-serif;
 }
 
-input, button {
+input, button, li {
   background-color: var(--color-borders);
   color: var(--color-white);
   margin: 0;
@@ -96,29 +96,56 @@ header h1 {
   border-radius: 0.8rem;
   background-color: var(--color-shape);
 }
-.container .add-task {
+.container #add-task {
   width: 100%;
   display: flex;
   justify-content: center;
   margin: auto;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: solid 4px #666 ;
 }
-.container .add-task input {
+.container #add-task input {
   margin-right: 1rem;
   width: 100%;
   padding: 0 1rem;
 }
 
-.container .add-task button {
+.container #add-task button {
   font-size: 1.5rem;
   font-weight: 900;
   background-color: var(--color-green);
   transition: 200ms;
 }
 
-.container .add-task button:hover {
+.container #add-task button:hover {
   opacity: 0.8;
 }
 
-li {
+#list li {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
   list-style: none;
+  justify-content: space-between;
+}
+
+#list li div{
+  display: flex;
+  align-items: center; 
+}
+
+#list li input{
+  margin: 0 0.6rem;
+  outline: none;
+  border-radius: 0;
+  border: none;
+}
+
+#list li button{
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-left: 1rem;
+  background-color: var(--color-red);
+  transition: 200ms;
 }
