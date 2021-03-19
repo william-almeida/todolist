@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="./src/css/main.css">
     <title>TODO LIST</title>
 </head>
-<script src="./src/js/index.js"></script>
+  <script src="./src/js/index.js"></script>
 
-<body>
+<body onload="runApp()">
   <header>
       <h1>TODO LIST</h1>
   </header>
@@ -20,19 +20,8 @@
         <button type="button" onclick="addNewTask()">+</button>
       </div>
 
-      <div id="list">
-        <ul>
-
-          <li>
-            <div>
-              <input type="checkbox" id="check">
-              <p>Fazer um TODO</p>
-            </div>
-            
-            <button>
-              X
-            </button>
-          </li>
+      <div>
+        <ul id="list">
           
         </ul>
       </div>

@@ -1,16 +1,45 @@
+function idGenerator () {
+  const time = new Date()
+  const id = 
+    time.getDate().toString() +
+    time.getHours().toString() +
+    time.getMinutes().toString() +
+    time.getMilliseconds().toString()
+
+    return id
+}
+
 function addNewTask(){
-  const task = document.querySelector('#new-task').value
+  const taskDescription = document.querySelector('#new-task').value
   const list = document.querySelector('#list')
+  const taskId = String(idGenerator())
+  console.log(taskId)
+  
+
   list.innerHTML += (
-    `<li>
+    `<li id="id${taskId}">
         <div>
           <input type="checkbox" id="check">
-          <p>${task}</p>
+          <p  >${taskDescription}</p>
         </div>
         
-        <button>
+        <button onclick="deleteTask(${taskId})">
           X
         </button>
-      </li>`)
+    </li>`)
+}
 
+function deleteTask(id){
+  console.log (id)
+  const test = document.querySelector(`li#id${id}`)
+  test.remove()
+}
+  /*
+  ideia: o itemda lista vai ser add com o index
+  como id do li 
+  */
+
+
+function runApp (){
+  return addNewTask
 }
