@@ -8,18 +8,8 @@ box-sizing: 0;
   --color-background: #121214;
   --color-green: #04d361;
   --color-red: #e83f5b;
-  --color-orange: #fd951f;
-  --color-yellow: #f7df1e;
-  --color-primary: #8257e6;
-  --color-primary-hover: #9466ff;
-  --color-secondary: #e1e1e6;
-  --color-text: #a8a8b3;
-  --color-support: #737380;
   --color-shape: #202024;
-  --color-shape-hover: #29292e;
-  --color-icons: #41414d;
-  --color-borders: #323238;
-  --color-black: #0d0d0f;
+  --color-items: #323238;
   --color-white: #fff;
 }
 
@@ -48,7 +38,7 @@ body, button, input, textarea {
 }
 
 input, button, li {
-  background-color: var(--color-borders);
+  background-color: var(--color-items);
   color: var(--color-white);
   margin: 0;
   padding: 0;
@@ -86,7 +76,7 @@ header {
 }
 
 header h1 {
-  color: var(--color-primary);
+  color: var(--color-green);
 }
 
 .container {
@@ -121,6 +111,15 @@ header h1 {
 .container #add-task button:hover {
   opacity: 0.8;
 }
+button {
+  display: flex;
+  align-items: center;
+
+}
+button img{
+  margin: auto;
+  height: 70%;
+}
 
 #list li {
   margin: 1rem 0;
@@ -143,8 +142,6 @@ header h1 {
 }
 
 #list li button{
-  font-size: 1.5rem;
-  font-weight: 900;
   margin-left: 1rem;
   background-color: var(--color-red);
   transition: 200ms;

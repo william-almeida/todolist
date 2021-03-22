@@ -24,7 +24,7 @@ function addNewTask(){
         </div>
         
         <button onclick="deleteTask(${taskId})">
-          X
+          <img src="./src/images/close.png" alt="Deletar">
         </button>
     </li>`)
 }
